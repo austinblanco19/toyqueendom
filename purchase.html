@@ -5,11 +5,30 @@
 
 
     <link href="css/shop-homepage.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="toyqueendomproduct.css">
+    <link rel="stylesheet" type="text/css" href="toyqueendomproduct.html">
     <style>
     .div1{
     	float: left;
     }
+    .row1 {
+         width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+    }
+    .row1 input {
+         width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+    .form1{
+        width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+    }
+    }
+
+    </style>
     </style>
 </head>
 <body>
@@ -24,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -57,15 +76,15 @@
                     <a href="#" class="list-group-item">Boy Toys</a>
                 </div>
             </div>
-            <div style="height:100px;">
-  <div class="row">
-  <form align=center><div style="color: black;">
+            <div style="height:150px;">
+  <div class="row1">
+  <div style="color: black;">
   <span class="payment-errors"></span>
 
   <div class="form-row">
     <label>
       <span>Card Number</span>
-      <input type="text" size="20" data-stripe="number">
+      <input type="text" size="20" placeholder="Enter your Card Number" data-stripe="number">
     </label>
   </div>
 
@@ -75,24 +94,30 @@
       <input type="text" size="2" data-stripe="exp_month">
     </label>
     <span> / </span>
-    <input type="text" size="2" data-stripe="exp_year">
+    <input type="text" size="2" placeholder="Enter Expiration" data-stripe="exp_year">
   </div>
 
   <div class="form-row">
     <label>
       <span>CVC</span>
-      <input type="text" size="4" data-stripe="cvc">
+      <input type="text" size="4" placeholder="Enter CVC" data-stripe="cvc">
     </label>
   </div>
 
   <div class="form-row">
     <label>
       <span>Billing ZIP Code</span>
-      <input type="text" size="6" data-stripe="address_zip">
+      <input type="text" size="6" placeholder="Enter Zip Code" data-stripe="address_zip">
     </label>
   </div>
 </div>
-  <input type="submit" class="submit" value="Submit Payment">
+<form method="GET">
+  <b><strong>Name </strong></b><input type="text" class="form" name="name" placeholder="Enter your name!" id="name">
+  <br><b><strong>Contact </strong></b><input type="text" class="form" name="contact" placeholder="Enter your contact number!" id="contact1">
+  <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email </strong></b><input type="text" class="form" name="Email" placeholder="Enter your email!" id="Email1">
+  <input type="submit" onclick="return clicked();" value="I'm ready!">
+</form>
+</form>
 </form>
   </body>
   </html>
